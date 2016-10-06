@@ -28,14 +28,123 @@ details,
 figcaption,
 figure,
 footer,
-header,
 hgroup,
-main,
 menu,
-nav,
 section,
 summary {
   display: block;
+}
+header{
+  display: block;
+  background-color: #53507E;
+  width: 1100px;
+  height:37px;
+  margin-top: 30px;
+  margin-bottom: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.header-nav a{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  color: #B1AEDE;
+  margin-left: 35px;
+  margin-top: 12px;
+}
+.header-nav a:hover{
+  color: white;
+}
+.header-nav a:active{
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+main{
+  display: block;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+#left-main{
+  float: left;
+  width: 550px;
+}
+#right-main{
+  float: left;
+  width: 550px;
+  overflow: hidden;
+}
+#headline{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  color: white;
+  line-height: 56px;
+  margin-bottom: 35px;
+}
+#subtext{
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #B1AEDE;
+  margin-bottom: 120px;
+}
+#index-button{
+  height: 80px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 30px; <!-- un centers the text in the button -->
+  padding-top: 30px;
+  border-radius: 40px;
+  background-color: #FF8ED8;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 142, 216, 0.75);<!-- wont show all around the button -->
+  -moz-box-shadow:    0px 0px 30px 0px rgba(255, 142, 216, 0.75);
+  box-shadow:         0px 0px 30px 0px rgba(255, 142, 216, 0.75);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: white;
+}
+#index-button:hover{
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px rgba(64, 61, 101, 0.75);
+  -moz-box-shadow:    0px 0px 30px rgba(64, 61, 101, 0.75);
+  box-shadow:         0px 0px 30px rgba(64, 61, 101, 0.75);
+  color: #403D65;
+}
+footer{
+  display: block;
+  height: 105px;
+  margin-top: 100px;
+  background-color: #403D65;
+  overflow: hidden;
+}
+#footer-nav a{
+  float: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  color: #B1AEDE;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+#footer-nav a:hover{
+  color: white;
+}
+#social a:hover{
+  opacity: .075;
+}
+#bottom-row{
+  height: 35px;
+  margin-top: 15px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #B1AEDE;
+  text-align: center;
 }
 audio,
 canvas,
@@ -124,7 +233,7 @@ textarea {
   margin: 0;
 }
 button {
-  overflow: visible;
+  overflow: hidden;
 }
 button,
 select {
@@ -175,6 +284,7 @@ fieldset {
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
+
 legend {
   border: 0;
   padding: 0;
@@ -213,7 +323,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #53507E;
 }
 input,
 button,
@@ -224,13 +334,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #000000;
+  color: #B1AEDE;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  color: white;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -301,6 +410,14 @@ hr {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+#left-container{
+  width: 550px;
+  float: left;
+}
+#right-container{
+  width: 550px;
+  float: left;
 }
 @media (min-width: 768px) {
   .container {
