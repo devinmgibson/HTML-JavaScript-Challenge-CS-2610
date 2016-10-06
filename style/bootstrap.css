@@ -146,6 +146,82 @@ footer{
   color: #B1AEDE;
   text-align: center;
 }
+#about-us{
+  width: 750px;
+  padding-left: 80px;
+  padding-top: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  background-color: white;
+  webkit-box-shadow:  0px 0px 100px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:    0px 0px 100px rgba(255, 255, 255, 0.75);
+  box-shadow:         0px 0px 100px rgba(255, 255, 255, 0.75);
+}
+.about-info{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5C5C5C;
+  max-width: 480px;
+}
+#about-jez{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5C5C5C;
+  max-width: 480px;
+  text-align: right;
+}
+#jeb{
+  width: 750px;
+  padding: 80px 80px 80px 180px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  background-color: white;
+  webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:    0px 0px 100px rgba(255, 255, 255, 0.75);
+  box-shadow:         0px 0px 100px rgba(255, 255, 255, 0.75);
+}
+#jeb-img{
+  width: 208px;
+  position: absolute;
+  top: -40px;
+  left: -70px;
+  border-style: solid;
+  border-color: white;
+  border-width: 20px;
+  border-radius: 50%;
+}
+#jez{
+  width: 750px;
+  padding: 80px 180px 80px 80px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  background-color: white;
+  webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:    0px 0px 100px rgba(255, 255, 255, 0.75);
+  box-shadow:         0px 0px 100px rgba(255, 255, 255, 0.75);
+}
+#jez-img{
+  width: 208px;
+  position: absolute;
+  top: -40px;
+  right: -70px;
+  border-style: solid;
+  border-color: white;
+  border-width: 20px;
+  border-radius: 50%;
+}
 audio,
 canvas,
 progress,
