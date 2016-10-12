@@ -37,10 +37,10 @@ summary {
 header{
   display: block;
   background-color: #53507E;
-  width: 1100px;
+  width: 100%;
   height:37px;
   margin-top: 30px;
-  margin-bottom: 115px;
+  margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -52,6 +52,7 @@ header{
   color: #B1AEDE;
   margin-left: 35px;
   margin-top: 12px;
+  float: right;
 }
 .header-nav a:hover{
   color: white;
@@ -62,7 +63,7 @@ header{
 }
 main{
   display: block;
-  width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -70,10 +71,12 @@ main{
 #left-main{
   float: left;
   width: 550px;
+  margin-top: 100px;
 }
 #right-main{
   float: left;
   width: 550px;
+  margin-top: 100px;
   overflow: hidden;
 }
 #headline{
@@ -93,10 +96,10 @@ main{
 }
 #index-button{
   height: 80px;
+  margin-left: 15px;
+  margin-bottom: 20px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 30px; <!-- un centers the text in the button -->
-  padding-top: 30px;
   border-radius: 40px;
   background-color: #FF8ED8;
   position: relative;
@@ -118,6 +121,7 @@ main{
 footer{
   display: block;
   height: 105px;
+  width: 100%;
   margin-top: 100px;
   background-color: #403D65;
   overflow: hidden;
@@ -146,13 +150,13 @@ footer{
   color: #B1AEDE;
   text-align: center;
 }
-#about-us{
+.about-us{
   width: 750px;
   padding-left: 80px;
   padding-top: 80px;
   padding-right: 80px;
   padding-bottom: 80px;
-  margin-top: 0px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 90px;
@@ -221,6 +225,61 @@ footer{
   border-color: white;
   border-width: 20px;
   border-radius: 50%;
+}
+#contact-form{
+  width: 500px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+input[type="text"]{
+  border: none;
+  border-bottom: 2px solid white;
+  height: 35px;
+  background: transparent;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  padding-left: 0px;
+
+  ::-webkit-input-placeholder {
+    color: #B1AEDE;
+  }
+  ::-moz-placeholder {
+    color: #B1AEDE;
+  }
+  :-ms-input-placeholder {
+    color: #B1AEDE;
+  }
+  :-moz-placeholder {
+    color: #B1AEDE;
+  }
+}
+#contact-button{
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border-radius: 30px;
+  background-color: #FF8ED8;
+
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 142, 216, 0.75);
+    -moz-box-shadow:    0px 0px 30px rgba(255, 142, 216, 0.75);
+  box-shadow:         0px 0px 30px 0px rgba(255, 142, 216, 0.75);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+}
+#contact-button:hover{
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px rgba(64, 61, 101, 0.75);
+  -moz-box-shadow:    0px 0px 30px rgba(64, 61, 101, 0.75);
+  box-shadow:         0px 0px 30px rgba(64, 61, 101, 0.75);
+  color: #403D65;
 }
 audio,
 canvas,
@@ -482,18 +541,11 @@ hr {
   cursor: pointer;
 }
 .container {
+  width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-#left-container{
-  width: 550px;
-  float: left;
-}
-#right-container{
-  width: 550px;
-  float: left;
 }
 @media (min-width: 768px) {
   .container {
@@ -507,7 +559,7 @@ hr {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1100px;
   }
 }
 .container-fluid {
