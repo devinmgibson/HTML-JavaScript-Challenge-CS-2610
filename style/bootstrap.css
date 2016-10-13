@@ -159,7 +159,7 @@ footer{
   text-align: center;
 }
 .about-us{
-  width: 750px;
+  width: 67%;
   padding-left: 80px;
   padding-top: 80px;
   padding-right: 80px;
@@ -189,7 +189,7 @@ footer{
   text-align: right;
 }
 #jeb{
-  width: 750px;
+  width: 67%;
   padding: 80px 80px 80px 180px;
   position: relative;
   margin-top: 0px;
@@ -212,7 +212,7 @@ footer{
   border-radius: 50%;
 }
 #jez{
-  width: 750px;
+  width: 67%;
   padding: 80px 180px 80px 80px;
   position: relative;
   margin-top: 0px;
@@ -565,23 +565,19 @@ hr {
 
 @media (max-width: 640px) {
   .container-two {
-    width: 450px;
+    width: 640px;
   }
 }
 @media (min-width: 640px) {
   .container {
-    width: 632px;
+    width: 640px;
   }
-  .container-two {
-    width: 450px;
-  }
-}
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
   .container-two {
-    width: 600px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
@@ -589,7 +585,7 @@ hr {
     width: 970px;
   }
   .container-two {
-    width: 750px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
@@ -597,7 +593,7 @@ hr {
     width: 1100px;
   }
   .container-two {
-    width: 750px;
+    width: 1100px;
   }
 }
 .container-fluid {
