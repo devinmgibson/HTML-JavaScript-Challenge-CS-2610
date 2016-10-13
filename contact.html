@@ -5,22 +5,26 @@
     <meta charset="utf-8">
     <!-- unless otherwise stated all css styling can be found here -->
     <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <script type="text/javascript" src="js/validate.js"></script>
     <!-- use Google font Raleway -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- use Google font Roboto slab -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/sodacans_favicon.png">
     <title>Kool-Aid: God's Essence</title>
   </head>
 
   <body>
-    <header>
-      <!-- Company Logo on left side of header -->
-      <img src="images/logo.svg" alt="ShaedyCult Logo" height="37px;">
-      <!-- Navigation bar on right side of header -->
-      <nav class="header-nav">
-        <a href="about.html">ABOUT US</a>
-        <a href="contact.html">CONTACT</a>
-      </nav>
+    <header class="container">
+      <div class="col-lg-12">
+        <!-- Company Logo on left side of header -->
+        <img src="images/logo.svg" alt="ShaedyCult Logo" height="37px;">
+        <!-- Navigation bar on right side of header -->
+        <nav class="header-nav" style="float: right;">
+          <a href="contact.html">CONTACT</a>
+          <a href="about.html">ABOUT US</a>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="about-us">
@@ -36,29 +40,40 @@
           afterlife.
         </p>
       </div>
-      <div id="contact-form">
-        <input type="text" placeholder="First Name" style="float: left; width: 45%; margin-bottom: 25px;">
-        <input type="text" placeholder="Last Name" style="float: right; width: 45%; margin-bottom: 25px;">
-        <input type="text" placeholder="Email Address" style=" width: 100%; margin-bottom: 25px;">
-        <input type="text" placeholder="Confirm Email Address" style="width: 100%;">
-      </div>
-      <center><button id="contact-button">BRING ON THE AFTERLIFE</button></center>
-
+      <form class="col-lg-12" name="contactShaedy" onsubmit="return validateForm()">
+        <div id="contact-form">
+          <input type="text" name="firstname" placeholder="First Name" style="float: left; width: 45%; margin-bottom: 25px;">
+          <input type="text" name="lastname" placeholder="Last Name" style="float: right; width: 45%; margin-bottom: 25px;">
+          <input type="text" name="email" placeholder="Email Address" style=" width: 100%; margin-bottom: 25px;">
+          <input type="text" name="confirmEmail" placeholder="Confirm Email Address" style="width: 100%;">
+        </div>
+        <center><button id="contact-button" value="submit">BRING ON THE AFTERLIFE</button></center>
+      </form>
     </main>
     <footer>
       <!-- Top row of the footer contains navigation and social icons -->
-      <div style="width: 1100px; height: 34px; padding-top:10px; padding-bottom: 10px; padding-left: 0; padding-right: 0; margin-left:auto; margin-right: auto;">
-        <nav id="footer-nav">
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-        <div id="social" style="float: right;">
-          <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Social Button" width="34px"></a>
-          <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Social Button" width="34px"></a>
-          <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter Social Button" width="34px"></a>
+      <div class="container">
+        <div id="foot-top-row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <nav id="footer-nav">
+              <a href="index.html">HOME</a>
+              <a href="about.html">ABOUT US</a>
+              <a href="contact.html">CONTACT</a>
+            </nav>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div id="social" style="float: right;">
+              <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Social Button" width="34px"></a>
+              <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Social Button" width="34px"></a>
+              <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter Social Button" width="34px"></a>
+            </div>
+          </div>
         </div>
-
+      </div>
+      <div class="container">
+        <div id="bottom-row" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          &#169; ShaedyCult 2016
+        </div>
       </div>
     </footer>
   </body>

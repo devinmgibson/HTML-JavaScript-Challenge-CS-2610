@@ -70,12 +70,10 @@ main{
 }
 #left-main{
   float: left;
-  width: 550px;
   margin-top: 100px;
 }
 #right-main{
   float: left;
-  width: 550px;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -96,8 +94,9 @@ main{
 }
 #index-button{
   height: 80px;
-  margin-left: 15px;
+  margin-left: 30px;
   margin-bottom: 20px;
+  margin-right: 30px;
   padding-left: 45px;
   padding-right: 45px;
   border-radius: 40px;
@@ -126,13 +125,22 @@ footer{
   background-color: #403D65;
   overflow: hidden;
 }
+#foot-top-row{
+  height: 54px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 #footer-nav a{
   float: left;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 12px;
   color: #B1AEDE;
-  margin-left: 35px;
+  margin-right: 35px;
   margin-top: 10px;
 }
 #footer-nav a:hover{
@@ -200,7 +208,7 @@ footer{
   left: -70px;
   border-style: solid;
   border-color: white;
-  border-width: 20px;
+  border-width: 15px;
   border-radius: 50%;
 }
 #jez{
@@ -223,7 +231,7 @@ footer{
   right: -70px;
   border-style: solid;
   border-color: white;
-  border-width: 20px;
+  border-width: 15px;
   border-radius: 50%;
 }
 #contact-form{
@@ -241,6 +249,7 @@ input[type="text"]{
   font-size: 18px;
   color: white;
   padding-left: 0px;
+  outline: none;
 
   ::-webkit-input-placeholder {
     color: #B1AEDE;
@@ -265,6 +274,7 @@ input[type="text"]{
   padding-left: 45px;
   border-radius: 30px;
   background-color: #FF8ED8;
+  outline: none;
 
   -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 142, 216, 0.75);
     -moz-box-shadow:    0px 0px 30px rgba(255, 142, 216, 0.75);
@@ -541,25 +551,53 @@ hr {
   cursor: pointer;
 }
 .container {
-  width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden;
+}
+.container-two {
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .container-two {
+    width: 450px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    width: 632px;
+  }
+  .container-two {
+    width: 450px;
+  }
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+  .container-two {
+    width: 600px;
   }
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+  .container-two {
+    width: 750px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1100px;
+  }
+  .container-two {
+    width: 750px;
   }
 }
 .container-fluid {
